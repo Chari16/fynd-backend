@@ -1,0 +1,13 @@
+services: 
+  unilight-backend: 
+    container_name: unilight-backend
+    image: aimvector/nodejs:1.0.0
+    build: 
+      context: ./
+      target: debug
+
+    volumes:
+    - ./:/work/
+    ports: 
+      - 3001:3000
+      - 9229:9229 
