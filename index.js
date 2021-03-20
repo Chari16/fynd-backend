@@ -24,7 +24,7 @@ app.use(middlewares)
 const port = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
-  res.render('template')
+  res.send('Server is Up')
 })
 
 app.get('/home', (req,res) => {
